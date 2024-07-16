@@ -8,6 +8,36 @@
     box-sizing: border-box;
 }
 
-/* body {
+ img {
+    width: min(2vw, 5vw);
+}
 
-} */
+.search img {
+    width: min(2vw, 5vw);
+    /* border: 1px solid blue; */
+    position: relative;
+    top: 5px;
+}
+
+.header {
+    border: 1px solid red;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.header-up {
+    display: flex;
+    gap: 15vw;
+    padding: 5px 10px;
+    border: 1px solid green;
+}
+.notification {
+    border: 1px solid purple;
+    display: flex;
+
+    margin-left: auto;
+}
+.header-down {
+border: 1px solid orange;
+}
