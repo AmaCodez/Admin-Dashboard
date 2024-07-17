@@ -1,6 +1,10 @@
-/* :root{
-
-} */
+:root{
+font-size: 16px;
+--font-properties: bold 0.9rem Arial, Helvetica, sans-serif;
+--font-weight: bold;
+--font-family: Arial, Helvetica, sans-serif;
+--border-check: 1px solid black;
+}
 
 * {
     margin: 0;
@@ -8,30 +12,45 @@
     box-sizing: border-box;
 }
  
-/* header */
+/* images */
 
+img {
+    width: min(3vw, 3vh);
+}
+.search img {
+    width: min(3vw, 3vh);
+}
+.profile-icon-mini .profile-icon-img {
+    width: min(4vw, 4vh);
+}
+.bell-icon {
+    width: min(2.5vw, 2.5vh);
+}
+
+.profile-icon .profile-icon-img {
+    width: min(6.5vw, 6.5vh);
+}
+
+/* header */
 
 .header {
     border: 1px solid red;
-    padding: 10px 20px;
+    padding: 0px 20px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
 }
 .search {
     flex: 1;
     display: flex;
-    padding: 5px;
+    padding: 15px;
     gap: 10px;
-    /* align-items: center; */
-    border: 1px solid gray;
 
 }
 input[type='text'] {
     height: 4vh;
     flex: 1;
     min-width: 1vh;
-    max-width: 80%;
+    max-width: 60%;
     font-size: 1rem;
     padding-left: 2vh;
     border-radius: 25vh;
@@ -39,28 +58,95 @@ input[type='text'] {
     background-color: rgb(201, 199, 199);
 }
 
- img {
-    width: min(3vw, 3vh);
-}
-.search img {
-    width: min(3vw, 3vh);
-}
 .header-up {
     display: flex;
     gap: 15vw;
-    padding: 5px 10px;
-    border: 1px solid green;
+    padding: 10px;
 }
 .notification {
-    border: 1px solid purple;
     display: flex;
     align-items: center;
     gap: 2vw;
     justify-content: center;
-    align-content: center;
+    min-width: 10%;
     max-width: 300px;
     flex: 1;
+    padding: 5px;
 }
+
+.profile-icon-mini{
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    flex-shrink: 0;
+   
+}
+
+.username{
+font: var(--font-properties);
+}
+
 .header-down {
-border: 1px solid orange;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px;
+
+}
+
+.user-main-profile{
+    padding:10px;
+    display: flex;
+    gap: 17px;
+    align-items: center;
+}
+
+.profile-icon {
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.welcome-text{
+    margin-bottom: 2px;
+    font: var(--font-properties);
+}
+
+.welcome-username{
+font-size: 1.3rem;
+font-weight: var(--font-weight);
+font-family: var(--font-family);
+}
+.upload-buttons{
+    padding: 5px;
+    display: flex;
+    gap: 25px;
+    justify-content: end;
+    min-width: 20%;
+    max-width: 500px;
+    flex-wrap: wrap;
+}
+
+button {
+    border: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: #4285f4; 
+    color: white; 
+    font-size: 1rem;
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+button:hover {
+    background-color: #357ae8;
 }
