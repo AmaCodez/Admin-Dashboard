@@ -15,33 +15,39 @@ font-size: 16px;
 /* images */
 
 img {
-    width: min(3vw, 3vh);
+    width: auto; /* Maintain ascpet ratio*/
+    height: 3vh;
 }
 .search img {
-    width: min(3vw, 3vh);
+    width: auto;
+    height: 4vh;
 }
 .profile-icon-mini .profile-icon-img {
-    width: min(4vw, 4vh);
+    width: auto;
+    height: 4vh;
 }
 .bell-icon {
-    width: min(2.5vw, 2.5vh);
+    width: auto;
+    height: 3vh;
 }
 
 .profile-icon .profile-icon-img {
-    width: min(6.5vw, 6.5vh);
+    width: auto;
+    height: 6.5vh;
 }
 
 /* header */
 
 .header {
-    border: 1px solid red;
     padding: 0px 20px;
     display: flex;
     flex-direction: column;
+    box-shadow: 0px 6px 8px rgba(187, 183, 183, 0.5);
 }
 .search {
     flex: 1;
     display: flex;
+    align-items: center;
     padding: 15px;
     gap: 10px;
 
@@ -139,7 +145,7 @@ font-family: var(--font-family);
 button {
     border: none;
     padding: 10px 30px;
-    border-radius: 20px;
+    border-radius: 20vh;
     background-color: #4285f4; 
     color: white; 
     font-size: 1rem;
