@@ -190,19 +190,19 @@ button:hover {
 }
 
 .menu{
-    border: var(--border-check);
+    /* border: var(--border-check); */
     display: flex;
     gap: 10px;
     align-items: center;
 }
 
-.menu-home{
+/* .menu-home{
     border: var(--border-check);
 }
 
 .menu-settings{
     border: var(--border-check);
-}
+} */
 
 ul{
     display: flex;
